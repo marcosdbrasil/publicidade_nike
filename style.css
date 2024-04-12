@@ -60,9 +60,12 @@ body * {
   text-decoration: none;
   margin: 0px 7vw 0px 3vw;
   border: 2px solid rgb(176, 220, 0);
-  background-color: rgba(255, 255, 255, 0.1) ;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 0 15px;
+}
+#link a:hover {
+  animation: light-change 0.2s forwards;
 }
 
 /* a chuteira no centro */
@@ -72,7 +75,6 @@ body * {
   align-items: center;
   justify-content: center;
 }
-
 #center img {
   display: flex;
   width: 100%;
@@ -80,7 +82,13 @@ body * {
   min-width: 400px;
   transform: rotate(7deg) scaleX(-1);
   object-fit: contain;
-  
+  filter: brightness(90%);
+  margin: 0 0 0 5vw;
+  animation: rotate-back 0.2s forwards;
+}
+#center img:hover {
+  filter: brightness(100%);
+  animation: rotate-in 0.4s forwards;
 }
 
 /* a frase final */
@@ -95,4 +103,32 @@ body * {
   font-style: italic;
   font-size: 4vw;
   margin: 0.8vw auto;
+}
+
+/*animação da chuteira*/
+@keyframes rotate-in {
+  from {
+    transform: rotate(7deg) scaleX(-1);
+  }
+  to {
+    transform: rotate(10deg) scaleX(-1);
+  }
+}
+@keyframes rotate-back {
+  from {
+    transform: rotate(10deg) scaleX(-1);
+  }
+  to {
+    transform: rotate(7deg) scaleX(-1);
+  }
+}
+
+/*animalção do link*/
+@keyframes light-change {
+  from {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
