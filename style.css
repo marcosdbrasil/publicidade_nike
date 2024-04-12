@@ -14,6 +14,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 45px;
+  height: 100vh;
+  width: 100vw;
 }
 
 body * {
@@ -60,7 +62,7 @@ body * {
   border: 2px solid rgb(176, 220, 0);
   background-color: rgba(255, 255, 255, 0.1) ;
   border-radius: 10px;
-  padding: 0px 15px;
+  padding: 0 15px;
 }
 
 /* a chuteira no centro */
@@ -74,7 +76,8 @@ body * {
 #center img {
   display: flex;
   width: 100%;
-  max-width: 55VW;
+  max-width: 55vw;
+  min-width: 400px;
   transform: rotate(7deg) scaleX(-1);
   object-fit: contain;
   
