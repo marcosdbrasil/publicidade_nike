@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(/assets/background_campoestelar.jpg);
+  background-image: url(./assets/background_campoestelar.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
