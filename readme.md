@@ -18,7 +18,7 @@ As linguagens usadas foram:
 * HTML
 * CSS
 
-## <font color=\yellow\> Para que serveria </font>
+## <font color=\yellow\> Para que serve </font>
 Essa Landing Page teria por intuito divulgar as chuteiras nike. Seria uma página usada para chamar a atenção das pessoas e redirecionar para o site oficial nike
 
 ## <font color=\yellow\> Usabilidade </font>
